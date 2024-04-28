@@ -150,7 +150,8 @@
   transform: translateX(100%);
   }
 }
-.about h2,.skill h2,.services h2 ,.portfolio h2,.price h2{
+.about h2,.skill h2,.services h2 
+,.portfolio h2,.price h2,.client h2,.contact h2,.blog h2{
   color: #000;
   font-size: 2.5rem;
   margin-top: 0.25rem;
@@ -198,6 +199,54 @@
   top: 50%;
   white-space: nowrap;
   letter-spacing: 12px;
+}
+.client h2::before {
+  position: absolute;
+  left: 50%;
+  content: "TESTIMONIALS";
+  transform: translate(-50%,-50%);
+  font-size: 4rem;
+  color: #4443;
+  top: 50%;
+  white-space: nowrap;
+  letter-spacing: 12px;
+}
+.client h2{
+  font-size: 2rem;
+}
+.contact h2::before {
+  position: absolute;
+  left: 50%;
+  content: "CONTACT";
+  transform: translate(-50%,-50%);
+  font-size: 4rem;
+  color: #4443;
+  top: 50%;
+  white-space: nowrap;
+  letter-spacing: 12px;
+}
+.blog h2::before{
+  position: absolute;
+  left: 50%;
+  content: "BLOG";
+  transform: translate(-50%,-50%);
+  font-size: 4rem;
+  color: #4443;
+  top: 50%;
+  white-space: nowrap;
+  letter-spacing: 12px;
+}
+@media (max-width:767PX) {
+  .portfolio h2::before,
+  .services h2::before,
+  .about h2::before,
+  .price h2::before,
+  .skill h2::before,
+  .client h2::before,
+  .blog h2::before,
+  .contact h2::before{
+    font-size: 2rem;
+  }
 }
 .price h2::before {
   position: absolute;
@@ -326,7 +375,7 @@
   font-weight: 600;
   color: #fff;
 }
-.offer h4::after{
+.offer h4::after,.client h6::after{ 
   position: absolute;
   content: "";
   background-color: #fff;
@@ -336,7 +385,12 @@
   bottom: -5px;
   transform: translateX(-50%);
 }
-.offer h1, .client h1{
+.client h6::after{ 
+  background: #ff206e;
+  width: 40px;
+  height: 2px;
+}
+.offer h1, .price-2 h1{
   color: #ff206e;
   font-size: 4rem;
   font-weight: 800;
@@ -348,7 +402,7 @@
   border-top-right-radius:4px ;
   border-top-left-radius:4px ;
 }
-.offer span{
+.price-2 h1{
   font-size: 2rem;
 }
 .price button.btn {
@@ -371,11 +425,23 @@
   padding: 10px 34px;
   transform: rotate(50deg);
 }
-.client{
+.price-2{
   background-image: url("image/stat.jpg");
   background-size: cover;
 }
-.client::after{
+.price-2::before{
+  transition: 0.5s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  left: 0;
+  top: 0;
+}
+.price-2:hover::before{
+  backdrop-filter: blur(5px);
+}
+.price-2::after{
   position: absolute;
   content: '';
   background-color: rgba(0, 0, 0, 0.486);
@@ -383,4 +449,66 @@
   height: 100%;
   left: 0;
   top: 0;
+}
+.navbar-toggler span{
+  width: 30px;
+  height: 3px;
+}
+.navbar-toggler .span{
+  width: 15px;
+}
+.client img{
+  width: 125px;
+  height: 125px;
+}
+.carousel-indicators {
+  bottom: -90px;
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  border-radius: 50%;
+  height: 10px;
+  background-color: #00000054;
+  opacity: 1;
+  transition: 0.5s;
+}
+button.active {
+  background: #000000!important;
+  border-top: none!important;
+  border-bottom: none!important;
+}
+.client h6{
+  font-size: 15px;
+}
+.client-2{
+  background-image: url("image/dark_dot.jpg");
+  background-repeat: repeat;
+}
+.blog .image{
+  width: 270px;
+}
+.blog .red{
+  color: #ff206e;
+}
+.blog .ico{
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+}
+.ico i{
+  transition: 0.5s;
+}
+.blog .ico:hover i{
+  color: #ff206e!important;
+}
+.blog .image img{
+  transition: 0.5s;
+}
+.blog .box:hover img{
+  transform: scale(1.2);
+}
+@media (max-width:767px) {
+  button.carousel-control-prev,button.carousel-control-next {
+    display: none;
+}
 }
