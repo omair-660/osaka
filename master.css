@@ -193,11 +193,11 @@
   left: 50%;
   content: "PORTFOLIO";
   transform: translate(-50%,-50%);
-  font-size: 4rem;
+  font-size: 3rem;
   color: #4443;
   top: 50%;
   white-space: nowrap;
-  letter-spacing: 12px;
+  letter-spacing: 9px;
 }
 .price h2::before {
   position: absolute;
