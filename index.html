@@ -101,7 +101,7 @@
               <img src="image/land.jpg" class="w-100" alt="">
             </div>
           </div>
-          <div class="col-lg-8 ps-4">
+          <div class="col-lg-8 ps-4 my-4 my-md-0">
             <h4 class="text-black">Robin Steel</h4>
             <h6 class="text-danger">Creative UI/UX Designer, Developer.</h6>
             <p class="pt-3 pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -471,7 +471,7 @@
       <div class="container my-4 py-3">
         <h2 class="text-black position-relative h1">PRICE</h2>
         <p class="my-4 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem.</p>
-        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30"
+        <swiper-container class="mySwiper non" pagination="true" pagination-clickable="true" space-between="30"
           slides-per-view="3">
           <swiper-slide>
             <div class="bg-white shadow text-center">
@@ -549,6 +549,76 @@
             </div>
           </swiper-slide>
         </swiper-container>
+        <div class="row mob d-md-none">
+          <div class="col-12">
+            <div class="bg-white shadow text-center mb-4">
+              <div class="offer bg-black p-5">
+                <h4 class="text-light fw-bold position-relative pb-2">FREE</h4>
+                <h1 class="text-light"><span>$</span>0</h1>
+              </div>
+              <div class="p-5 pb-4">
+                <p class="border-bottom pb-3">2 user account</p>
+                <p class="border-bottom pb-3">10 website</p>
+                <p class="border-bottom pb-3">20 giga disk space</p>
+                <p class="border-bottom pb-3">mon-fru support</p>
+                <button type="button" class="btn text-white px-3">buy</button>
+              </div>
+            </div>
+            <div class="bg-white shadow text-center mb-4">
+              <div class="offer bg-black p-5  position-relative box overflow-hidden">
+                <h4 class="text-light fw-bold position-relative pb-2">BASIC</h4>
+                <h1><span>$</span>15</h1>
+              </div>
+              <div class="p-5">
+                <p class="border-bottom pb-3">2 user account</p>
+                <p class="border-bottom pb-3">10 website</p>
+                <p class="border-bottom pb-3">20 giga disk space</p>
+                <p class="border-bottom pb-3">mon-fru support</p>
+                <button type="button" class="btn text-white px-3">buy</button>
+              </div>
+            </div>
+
+            <div class="bg-white shadow text-center mb-4">
+              <div class="offer bg-black p-5">
+                <h4 class="text-light fw-bold position-relative pb-2">DELUX</h4>
+                <h1><span>$</span>25</h1>
+              </div>
+              <div class="p-5 pb-4">
+                <p class="border-bottom pb-3">2 user account</p>
+                <p class="border-bottom pb-3">10 website</p>
+                <p class="border-bottom pb-3">20 giga disk space</p>
+                <p class="border-bottom pb-3">mon-fru support</p>
+                <button type="button" class="btn text-white px-3">buy</button>
+              </div>
+            </div>
+            <div class="bg-white shadow text-center mb-4">
+              <div class="offer bg-black p-5">
+                <h4 class="text-light fw-bold position-relative pb-2">PREMIUM</h4>
+                <h1><span>$</span>35</h1>
+              </div>
+              <div class="p-5 pb-4">
+                <p class="border-bottom pb-3">2 user account</p>
+                <p class="border-bottom pb-3">10 website</p>
+                <p class="border-bottom pb-3">20 giga disk space</p>
+                <p class="border-bottom pb-3">mon-fru support</p>
+                <button type="button" class="btn text-white px-3">buy</button>
+              </div>
+            </div>
+            <div class="bg-white shadow text-center mb-4">
+              <div class="offer bg-black p-5">
+                <h4 class="text-light fw-bold position-relative pb-2">ENTERPRICE</h4>
+                <h1><span>$</span>50</h1>
+              </div>
+              <div class="p-5 pb-4">
+                <p class="border-bottom pb-3">2 user account</p>
+                <p class="border-bottom pb-3">10 website</p>
+                <p class="border-bottom pb-3">20 giga disk space</p>
+                <p class="border-bottom pb-3">mon-fru support</p>
+                <button type="button" class="btn text-white px-3">buy</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- END PRICE -->
@@ -750,7 +820,7 @@
     <!-- END cleint -->
     <!-- ********* -->
     <!-- start blog -->
-    <section class="blog py-5">
+    <section class="blog py-5" id="blog">
       <div class="text-center my-5">
         <h2 class="text-black position-relative h1">BLOG</h2>
         <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem.</p>
@@ -760,7 +830,7 @@
           <div class="carousel-item active">
             <div class="row">
               <div class="col-md-4 box">
-                <div class="p-3 shadow">
+                <div class="shadow ">
                   <div class="big position-relative">
                     <div class="image overflow-hidden">
                       <img src="image/blog1.jpg" class="w-100" alt="">
@@ -770,22 +840,24 @@
                       </div>
                     </div>
                   </div>
-                  <h4 class="text-center mt-5 mb-1">morning bike ride</h4>
-                  <div class="d-flex red mt-1 mb-3 justify-content-sm-between w-100">
-                    <div>
-                      <i class="fas fa-calendar-alt"></i>
-                      <span>22 jun 2003</span>
+                  <div class="p-3">
+                    <h4 class="mt-5 mb-3 text-capitalize h5">morning bike ride</h4>
+                    <div class="d-flex red mt-1 mb-3 align-item-center w-100">
+                      <div class="pe-4">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>22 jun 2003</span>
+                      </div>
+                      <div>
+                        <i class="fas fa-user"></i>
+                        <span>omair</span>
+                      </div>
                     </div>
-                    <div>
-                      <i class="fas fa-user"></i>
-                      <span>omair</span>
-                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis in deserunt enim...</p>
                   </div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis in deserunt enim...</p>
                 </div>
               </div>
               <div class="col-md-4 box">
-                <div class="p-3 shadow">
+                <div class="shadow">
                   <div class="big position-relative">
                     <div class="image overflow-hidden">
                       <img src="image/blog2.jpg" class="w-100" alt="">
@@ -795,22 +867,24 @@
                       </div>
                     </div>
                   </div>
-                  <h4 class="text-center mt-5 mb-1">hard working</h4>
-                  <div class="d-flex red mt-1 mb-3 justify-content-sm-between w-100">
-                    <div>
-                      <i class="fas fa-calendar-alt"></i>
-                      <span>22 jun 2003</span>
+                  <div class="p-3">
+                    <h4 class="mt-5 mb-3 text-capitalize h5">hard working</h4>
+                    <div class="d-flex red mt-1 mb-3 align-item-center w-100">
+                      <div class="pe-4">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>22 jun 2003</span>
+                      </div>
+                      <div>
+                        <i class="fas fa-user"></i>
+                        <span>omair</span>
+                      </div>
                     </div>
-                    <div>
-                      <i class="fas fa-user"></i>
-                      <span>omair</span>
-                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis in deserunt enim...</p>
                   </div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis in deserunt enim...</p>
                 </div>
               </div>
               <div class="col-md-4 box">
-                <div class="p-3 shadow">
+                <div class="shadow ">
                   <div class="big position-relative">
                     <div class="image overflow-hidden">
                       <img src="image/blog3.jpg" class="w-100" alt="">
@@ -820,18 +894,21 @@
                       </div>
                     </div>
                   </div>
-                  <h4 class="text-center mt-5 mb-1">coffer break</h4>
-                  <div class="d-flex red mt-1 mb-3 justify-content-sm-between w-100">
-                    <div>
-                      <i class="fas fa-calendar-alt"></i>
-                      <span>22 jun 2003</span>
+
+                  <div class="p-3">
+                    <h4 class="mt-5 mb-3 text-capitalize h5">coffer break</h4>
+                    <div class="d-flex red mt-1 mb-3 align-item-center w-100">
+                      <div class="pe-4">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>22 jun 2003</span>
+                      </div>
+                      <div>
+                        <i class="fas fa-user"></i>
+                        <span>omair</span>
+                      </div>
                     </div>
-                    <div>
-                      <i class="fas fa-user"></i>
-                      <span>omair</span>
-                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis in deserunt enim...</p>
                   </div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis in deserunt enim...</p>
                 </div>
               </div>
             </div>
@@ -839,7 +916,7 @@
           <div class="carousel-item">
             <div class="row">
               <div class="col-md-4 box">
-                <div class="p-3 shadow">
+                <div class="shadow ">
                   <div class="big position-relative">
                     <div class="image overflow-hidden">
                       <img src="image/blog4.jpg" class="w-100" alt="">
@@ -849,22 +926,24 @@
                       </div>
                     </div>
                   </div>
-                  <h4 class="text-center mt-5 mb-1">amazing place</h4>
-                  <div class="d-flex red mt-1 mb-3 justify-content-sm-between w-100">
-                    <div>
-                      <i class="fas fa-calendar-alt"></i>
-                      <span>22 jun 2003</span>
+                  <div class="p-3">
+                    <h4 class="mt-5 mb-3 text-capitalize h5">amazing place</h4>
+                    <div class="d-flex red mt-1 mb-3 align-item-center w-100">
+                      <div class="pe-4">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>22 jun 2003</span>
+                      </div>
+                      <div>
+                        <i class="fas fa-user"></i>
+                        <span>omair</span>
+                      </div>
                     </div>
-                    <div>
-                      <i class="fas fa-user"></i>
-                      <span>omair</span>
-                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis in deserunt enim...</p>
                   </div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis in deserunt enim...</p>
                 </div>
               </div>
               <div class="col-md-4 box">
-                <div class="p-3 shadow">
+                <div class="shadow ">
                   <div class="big position-relative">
                     <div class="image overflow-hidden">
                       <img src="image/blog2.jpg" class="w-100" alt="">
@@ -874,22 +953,24 @@
                       </div>
                     </div>
                   </div>
-                  <h4 class="text-center mt-5 mb-1">hard working</h4>
-                  <div class="d-flex red mt-1 mb-3 justify-content-sm-between w-100">
-                    <div>
-                      <i class="fas fa-calendar-alt"></i>
-                      <span>22 jun 2003</span>
+                  <div class="p-3">
+                    <h4 class="mt-5 mb-3 text-capitalize h5">hard working</h4>
+                    <div class="d-flex red mt-1 mb-3 align-item-center w-100">
+                      <div class="pe-4">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>22 jun 2003</span>
+                      </div>
+                      <div>
+                        <i class="fas fa-user"></i>
+                        <span>omair</span>
+                      </div>
                     </div>
-                    <div>
-                      <i class="fas fa-user"></i>
-                      <span>omair</span>
-                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis in deserunt enim...</p>
                   </div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis in deserunt enim...</p>
                 </div>
               </div>
               <div class="col-md-4 box">
-                <div class="p-3 shadow">
+                <div class="shadow ">
                   <div class="big position-relative">
                     <div class="image overflow-hidden">
                       <img src="image/blog1.jpg" class="w-100" alt="">
@@ -899,18 +980,20 @@
                       </div>
                     </div>
                   </div>
-                  <h4 class="text-center mt-5 mb-1">morning bike ride</h4>
-                  <div class="d-flex red mt-1 mb-3 justify-content-sm-between w-100">
-                    <div>
-                      <i class="fas fa-calendar-alt"></i>
-                      <span>22 jun 2003</span>
+                  <div class="p-3">
+                    <h4 class="mt-5 mb-3 text-capitalize h5">morning bike ride</h4>
+                    <div class="d-flex red mt-1 mb-3 align-item-center w-100">
+                      <div class="pe-4">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>22 jun 2003</span>
+                      </div>
+                      <div>
+                        <i class="fas fa-user"></i>
+                        <span>omair</span>
+                      </div>
                     </div>
-                    <div>
-                      <i class="fas fa-user"></i>
-                      <span>omair</span>
-                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis in deserunt enim...</p>
                   </div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis in deserunt enim...</p>
                 </div>
               </div>
             </div>
@@ -919,6 +1002,54 @@
       </div>
     </section>
     <!-- END blog -->
+    <!-- ********* -->
+    <!-- start contact -->
+    <section class="contact" id="contact">
+      <div class="text-center">
+        <h2 class="text-white position-relative h1">GET IN TOUCH</h2>
+        <p class="my-4 text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem.</p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 md-3">
+            <div>
+              <div class="mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name*">
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail*">
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" placeholder="Message*" id="exampleFormControlTextarea1" rows="5"></textarea>
+              </div>
+              <div class="mt-3">
+                <button type="button" class="mt-3">SEND MESSAGE</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-3 offset-md-1">
+            <div>
+              <div class="mb-4">
+                <h6 class="text-capitalize">Phone</h6>
+                <a href="tel:+201288642158">+201288642158</a>
+              </div>
+              <div class="mb-4">
+                <h6 class="text-capitalize">email</h6>
+                <p><a href="mailto:elrosyomair@gmail.com">elrosyomair@gmail.com</a></p>
+              </div>
+              <div class="mb-4">
+                <h6 class="text-capitalize">location</h6>
+                <p>sharqia zaqaziq</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END contact -->
+    <div class="bg-white text-center py-3">
+      <P>&copy 2024 COPYRIGHT BY OMAIR</P>
+    </div>
     <!-- ********* -->
   </main>
 

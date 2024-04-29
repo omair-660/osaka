@@ -158,83 +158,28 @@
   font-weight: 800;
 }
 .about h2::before {
-  position: absolute;
-  left: 50%;
   content: "ABOUT";
-  transform: translate(-50%,-50%);
-  font-size: 4rem;
-  color: #4443;
-  top: 50%;
-  letter-spacing: 12px;
 }
 .skill h2::before {
-  position: absolute;
-  left: 50%;
   content: "MY SKILL";
-  transform: translate(-50%,-50%);
-  font-size: 4rem;
-  color: #fff3;
-  top: 50%;
-  white-space: nowrap;
-  letter-spacing: 12px;
 }
 .services h2::before {
-  position: absolute;
-  left: 50%;
   content: "SERVICES";
-  transform: translate(-50%,-50%);
-  font-size: 4rem;
-  color: #fff3;
-  top: 50%;
-  white-space: nowrap;
-  letter-spacing: 12px;
 }
 .portfolio h2::before {
-  position: absolute;
-  left: 50%;
   content: "PORTFOLIO";
-  transform: translate(-50%,-50%);
-  font-size: 4rem;
-  color: #4443;
-  top: 50%;
-  white-space: nowrap;
-  letter-spacing: 12px;
 }
 .client h2::before {
-  position: absolute;
-  left: 50%;
   content: "TESTIMONIALS";
-  transform: translate(-50%,-50%);
-  font-size: 4rem;
-  color: #4443;
-  top: 50%;
-  white-space: nowrap;
-  letter-spacing: 12px;
 }
 .client h2{
   font-size: 2rem;
 }
 .contact h2::before {
-  position: absolute;
-  left: 50%;
-  content: "CONTACT";
-  transform: translate(-50%,-50%);
-  font-size: 4rem;
-  color: #4443;
-  top: 50%;
-  white-space: nowrap;
-  letter-spacing: 12px;
+  content: "GET IN TOUCH";
 }
 .blog h2::before{
-  position: absolute;
-  left: 50%;
   content: "BLOG";
-  transform: translate(-50%,-50%);
-  font-size: 4rem;
-  color: #4443;
-  top: 50%;
-  white-space: nowrap;
-  letter-spacing: 12px;
 }
 @media (max-width:767PX) {
   .portfolio h2::before,
@@ -248,16 +193,25 @@
     font-size: 2rem;
   }
 }
-.price h2::before {
+.price h2::before,
+.blog h2::before,
+.contact h2::before,
+.client h2::before,
+.about h2::before,
+.skill h2::before ,
+.services h2::before,
+.portfolio h2::before{
   position: absolute;
   left: 50%;
-  content: "PRICE";
   transform: translate(-50%,-50%);
   font-size: 4rem;
   color: #4443;
   top: 50%;
   white-space: nowrap;
   letter-spacing: 12px;
+}
+.price h2::before{
+  content: "PRICE";
 }
 .about p{
   line-height: 1.6;
@@ -353,6 +307,8 @@
 .swiper-container {
   width: 100%;
   height: 100%;
+}
+.price .mySwiper{
   cursor: grab;
 }
 
@@ -472,7 +428,7 @@
   opacity: 1;
   transition: 0.5s;
 }
-button.active {
+.blog button.active {
   background: #000000!important;
   border-top: none!important;
   border-bottom: none!important;
@@ -484,10 +440,12 @@ button.active {
   background-image: url("image/dark_dot.jpg");
   background-repeat: repeat;
 }
-.blog .image{
-  width: 270px;
+p-3 shadow{
+  width: 370px;
 }
+
 .blog .red{
+  font-size:15px ;
   color: #ff206e;
 }
 .blog .ico{
@@ -511,4 +469,67 @@ button.active {
   button.carousel-control-prev,button.carousel-control-next {
     display: none;
 }
+.contact h2 {
+  font-size: 1.5rem;
+}
+.contact h2::before{
+  font-size: 1rem;
+}
+}
+.client button.active {
+  background: black;
+}
+.contact{
+  padding: 6rem 0;
+  background-color: #000;
+}
+.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #888;
+  border-radius: 0;
+}
+.form-control:focus {
+  color: #eee;
+  background-color: transparent;
+  border-bottom-color: #ff206ea6;
+  outline: 0;
+  box-shadow:none;
+}
+::placeholder{
+  color: #acacac!important;
+  font-size: 17px;
+}
+.contact h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ff206e;
+}
+.contact a,.contact p {
+  color: #fff;
+  text-decoration: none;
+}
+.contact button{
+  background-color: #fff;
+  color: #2e2e2e;
+  border: none;
+  border-radius: 2px;
+  width: 180px;
+  height: 50px;
+  transition: 0.5s;
+  }
+
+.contact button:hover{
+  background-color: #ff206e;
+  color: #eee;
+}
+
+.contact button:active{
+  background: transparent;
+  color: rgb(238, 238, 238);
+}
+@media (max-width:650px) {
+  .non{
+    display: none;
+  }
 }
