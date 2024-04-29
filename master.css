@@ -157,14 +157,33 @@
   margin-top: 0.25rem;
   font-weight: 800;
 }
+.price h2::before,
+.blog h2::before,
+.contact h2::before,
+.client h2::before,
+.about h2::before,
+.skill h2::before ,
+.services h2::before,
+.portfolio h2::before{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 4rem;
+  color: #4443;
+  top: 50%;
+  white-space: nowrap;
+  letter-spacing: 12px;
+}
 .about h2::before {
   content: "ABOUT";
 }
 .skill h2::before {
   content: "MY SKILL";
+  color: #ffffff4f;
 }
 .services h2::before {
   content: "SERVICES";
+  color: #ffffff4f;
 }
 .portfolio h2::before {
   content: "PORTFOLIO";
@@ -193,23 +212,7 @@
     font-size: 2rem;
   }
 }
-.price h2::before,
-.blog h2::before,
-.contact h2::before,
-.client h2::before,
-.about h2::before,
-.skill h2::before ,
-.services h2::before,
-.portfolio h2::before{
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  font-size: 4rem;
-  color: #4443;
-  top: 50%;
-  white-space: nowrap;
-  letter-spacing: 12px;
-}
+
 .price h2::before{
   content: "PRICE";
 }
