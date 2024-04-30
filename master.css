@@ -143,7 +143,7 @@
   width: 100%;
   height: 100%;
   transform: translateX(-100%);
-  animation: trans 1s 2s linear;
+  animation: trans 1s 2s cubic-bezier(0.4, 0, 1, 1);
 }
 @keyframes trans{
   100%{
@@ -211,6 +211,12 @@
   .contact h2::before{
     font-size: 2rem;
   }
+  .carousel-indicators {
+    bottom: -43px;
+}
+.client-2 img {
+  width: 50%;
+}
 }
 
 .price h2::before{
@@ -278,7 +284,8 @@
     z-index: 1;
     margin: 0 auto;
     border-bottom-left-radius: 4PX;
-    border-bottom-RIGHT-radius: 4PX;
+    border-bottom-right-radius: 4PX;
+    transition: 0.5s cubic-bezier(0.55, 0.06, 0.68, 0.19);
 }
 .portfolio .box:hover .hide{
   top: 50%;
@@ -412,9 +419,17 @@
 .navbar-toggler span{
   width: 30px;
   height: 3px;
+  transition: 0.5s;
 }
 .navbar-toggler .span{
   width: 15px;
+}
+#span-2.open{
+  width: 15px;
+  margin: 0 auto;
+}
+#span-3.open {
+  width: 100%;
 }
 .client img{
   width: 125px;
@@ -430,6 +445,8 @@
   background-color: #00000054;
   opacity: 1;
   transition: 0.5s;
+  border-top: 0 solid transparent;
+    border-bottom: 0px solid transparent;
 }
 .blog button.active {
   background: #000000!important;
@@ -477,6 +494,9 @@ p-3 shadow{
 }
 .contact h2::before{
   font-size: 1rem;
+}
+.land .text h1 {
+  font-size: 2rem;
 }
 }
 .client button.active {
