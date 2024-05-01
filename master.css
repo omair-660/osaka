@@ -532,7 +532,7 @@ p-3 shadow{
   color: #fff;
   text-decoration: none;
 }
-.contact button{
+.contact button,.details form button{
   background-color: #fff;
   color: #2e2e2e;
   border: none;
@@ -541,18 +541,94 @@ p-3 shadow{
   height: 50px;
   transition: 0.5s;
   }
-
-.contact button:hover{
+  .details form button{
+    background: #000000;
+    color:#fff ;
+  }
+.contact button:hover,.details form button:hover{
   background-color: #ff206e;
   color: #eee;
 }
 
-.contact button:active{
+.contact button:active,.details form button:active{
   background: transparent;
   color: rgb(238, 238, 238);
+}
+.details form button:active{
+  color: #252525;
 }
 @media (max-width:650px) {
   .non{
     display: none;
   }
+}
+.wh{
+  font-weight: 800;
+}
+.amazing ,.recent a{
+  color: #ff206e;
+  text-decoration: none;
+}
+.pra-2{
+  line-height: 1.6;
+}
+.pra-2::after{
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background-color: #ff206e;
+  width: 6px;
+  height: 100%;
+}
+.search{
+  color: rgba(136, 136, 136, 0.602);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.search:hover{
+  color: #252525;
+}
+ul{
+  list-style: none;
+  padding-left: 0rem;
+}
+.details ul li a{
+  color: #000;
+    text-decoration: none;
+}
+.btn button,.btn i{
+  transition: 0.5s;
+  font-size: 14px;
+}
+.btn button:hover{
+  background-color: #000!important;
+  color: #fff;
+}
+.btn i:hover{
+  text-decoration: underline;
+}
+.tags button{
+  transition: 1.5s;
+  color: #fff;
+}
+.follow i{
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.tags button:hover ,.follow i:hover{
+  color: #ff206e;
+}
+.comments img{
+  width: 75px;
+}
+@media (max-width:767px) {
+  .btn {
+    flex-wrap: wrap;
+    gap: 17px;
+}
 }
